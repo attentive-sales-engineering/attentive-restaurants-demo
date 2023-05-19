@@ -2,6 +2,9 @@
 
 This repository contains a restaurant demo website that showcases Attentive's capabilities for SMS Marketing and Transactional Messages in the restaurant space. The website demonstrates how Attentive can be used to enhance customer engagement, promote marketing campaigns, and streamline transactional communications for restaurants.
 
+The demo website can be accessed at: [https://attentive-sales-engineering.github.io/attentive-restaurants-demo/](https://attentive-sales-engineering.github.io/attentive-restaurants-demo/)
+
+
 ## Features
 
 - SMS Marketing: Leverage Attentive's SMS marketing capabilities to send promotional messages, offers, and updates to customers who have opted in to receive SMS notifications. Showcasing the effectiveness of targeted SMS campaigns in driving customer engagement and increasing sales.

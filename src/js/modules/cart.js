@@ -15,7 +15,7 @@ const Cart = {
   categories: null,
   menu: null,
   items: ls.get('cartItems') || [],
-  deliveryPrice: 3.99,
+  deliveryPrice: 9.99,
   orderTotal: 0,
   init: function() {
     const _ = this

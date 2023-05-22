@@ -4,6 +4,8 @@ This repository contains a restaurant demo website that showcases Attentive's ca
 
 The demo website can be accessed at: [https://attentive-sales-engineering.github.io/attentive-restaurants-demo/](https://attentive-sales-engineering.github.io/attentive-restaurants-demo/)
 
+To experience this demo, text DEMO to +1-833-461-3359
+
 
 ## Features
 

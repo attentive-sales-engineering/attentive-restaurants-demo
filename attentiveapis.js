@@ -176,8 +176,8 @@ function customAttributes(firstName, lastName, emailAddress, phoneNumber) {
 
     var raw = JSON.stringify({
         "properties": {
-            "firstName": firstName,
-            "lastName": lastName,
+            "First Name": firstName,
+            "Last Name": lastName,
         },
         "user": {
             "phone": phoneNumber,

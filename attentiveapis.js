@@ -1,7 +1,24 @@
 // attentiveapis.js
 
-// Set your Attentive API key
-const apiKey = 'NjYxR2UxWjZmbE5mM0N2NGNLZ0RuMHN0Um5qcjlUM2xVWUMx';
+
+// finds Attentive API Key
+function getCookie (cname) {
+    let name = cname + '='
+    let decodedCookie = decodeURIComponent(document.cookie)
+    let ca = decodedCookie.split(';')
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i]
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1)
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length)
+      }
+    }
+    return ''
+  }
+
+const attentiveApiKey = getCookie('attentiveApiKey')
 
 // default values in the order form
 if (window.location.pathname.endsWith("checkout.html")) {
@@ -125,7 +142,7 @@ function addSubscriber(phoneNumber, emailAddress = null) {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", `Bearer ${apiKey}`);
+    myHeaders.append("Authorization", `Bearer ${attentiveApiKey}`);
 
     var raw = JSON.stringify({
         "user": {
@@ -155,7 +172,7 @@ function customAttributes(firstName, lastName, emailAddress, phoneNumber) {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", `Bearer ${apiKey}`);
+    myHeaders.append("Authorization", `Bearer ${attentiveApiKey}`);
 
     var raw = JSON.stringify({
         "properties": {
@@ -189,7 +206,7 @@ function purchaseEvent(cartItem, emailAddress, phoneNumber) {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", `Bearer ${apiKey}`);
+    myHeaders.append("Authorization", `Bearer ${attentiveApiKey}`);
     const name = cartItem[0].name;
     const price = cartItem[0].price;
 

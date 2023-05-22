@@ -19,5 +19,7 @@ The demo website can be accessed at: [https://attentive-sales-engineering.github
 
 - **attentiveapis.js**: This file contains the implementation of the Attentive API integration. It provides functions to interact with the Attentive API for sending SMS messages, managing subscribers, and handling custom attributes. The file encapsulates the logic for making HTTP requests to the Attentive API, handling responses, and handling errors. This file is essential for integrating Attentive's SMS Marketing and Transactional Messages capabilities into the restaurant demo website.
 
+- **index.html**: This file is the main entry point and homepage of the restaurant demo website. It serves as the starting point for users when they visit the website. The file contains the HTML markup, structure, and content that are displayed to users.
+
 - **checkout.html**: This file is where the checkout activity happens for the user experience and will in turn call the attentiveapis.js script to execute.
 

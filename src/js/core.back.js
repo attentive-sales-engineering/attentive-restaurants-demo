@@ -1,6 +1,6 @@
 /* -----------------------------------------------------------------------------
 
-Attentive Food - Restaurant with Online Ordering System Template
+Attentive Restaurants
 
 File:           JS Core
 Version:        2.00

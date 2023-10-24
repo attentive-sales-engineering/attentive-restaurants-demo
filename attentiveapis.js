@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // add subscriber api
 function addSubscriber(phoneNumber, emailAddress = null) {
-    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/subscriptions';
+    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/#/Subscribers/addSubscriptions';
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -168,7 +168,7 @@ function addSubscriber(phoneNumber, emailAddress = null) {
 // custom attributes api
 function customAttributes(firstName, lastName, emailAddress, phoneNumber) {
     // Attentive API endpoint URL
-    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/attributes/custom';
+    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/#/Custom%20Attributes/postCustomAttributes';
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -202,7 +202,7 @@ function customAttributes(firstName, lastName, emailAddress, phoneNumber) {
 // purchase event api
 function purchaseEvent(cartItem, emailAddress, phoneNumber) {
     // Attentive API endpoint URL
-    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/events/ecommerce/purchase';
+    const apiUrl = 'https://attentive-api-swagger.herokuapp.com/#/eCommerce/postPurchaseEvents';
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
